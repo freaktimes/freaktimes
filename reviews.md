@@ -1,10 +1,10 @@
 ---
-layout: default
+layout: page
 title: Reviews
 permalink: /reviews/
 ---
 
-<article class="post">
+<article class="post-muziek">
   <h1>{{ page.title }}</h1>
 
   <div class="entry">

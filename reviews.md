@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Reviews
-permalink: /reviews
+permalink: /reviews/
 ---
 
 <article class="post">

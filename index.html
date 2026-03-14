@@ -16,3 +16,17 @@ layout: default
     </article>
   {% endfor %}
 </div>
+<div class="posts-artikels">
+  {% for post in site.posts-artikels %}
+    <article class="post-artikel">
+
+      <h1>{{ post-artikel.title }}</h1>
+
+      <div class="entry">
+        {{ post-artikel.excerpt }}
+      </div>
+
+      <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
+    </article>
+  {% endfor %}
+</div>

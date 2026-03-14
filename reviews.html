@@ -4,15 +4,17 @@ title: Reviews
 permalink: /reviews/
 ---
 
-<article class="post-muziek">
+<div class="posts-muziek">
+  {% for post in site.posts-muziek %}
+    <article class="post-muziek">
 
-  <div class="entry">
-    {{ content }}
-  </div>
+      <h1>{{ post.title }}</h1>
 
-  <div class="date">
-    Written on {{ page.date | date: "%B %e, %Y" }}
-  </div>
+      <div class="entry">
+        {{ post.excerpt }}
+      </div>
 
-  {% include disqus.html %}
-</article>
+      <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
+    </article>
+  {% endfor %}
+</div>

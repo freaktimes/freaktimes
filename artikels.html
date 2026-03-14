@@ -4,5 +4,17 @@ title: Artikels
 permalink: /artikels/
 ---
 
-<article class="post-artikel">
-</article>
+<div class="posts-artikels">
+  {% for post in site.posts-artikels %}
+    <article class="post-artikel">
+
+      <h1>{{ post.title }}</h1>
+
+      <div class="entry">
+        {{ post.excerpt }}
+      </div>
+
+      <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
+    </article>
+  {% endfor %}
+</div>
